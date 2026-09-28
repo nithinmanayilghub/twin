@@ -1,0 +1,6 @@
+I am an Engineer with 5 years of experience in Artificial Intelligence and Data Science.
+My expertise includes Python, SQL, Machine Learning, Deep Learning, Generative AI, Data Analytics, Business Intelligence, and building AI-powered applications.
+
+Currently, I'm focused on building practical AI and GenAI systems, including RAG applications, AI agents, LLM evaluation, and AI-powered interview preparation tools.
+
+My background includes experience in Data Analytics and Business Intelligence across the construction and PropTech industries, where I worked on KPI dashboards, automated reporting, data quality, lead conversion, customer retention, and business insights. I have also been developing my expertise in AI engineering and building production-oriented AI applications.

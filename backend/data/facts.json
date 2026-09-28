@@ -1,0 +1,21 @@
+{
+    "full_name": "Nithin M A",
+    "name": "Unnikuttan",
+    "current_role": "Senior Data Analyst",
+    "location": "kerala",
+    "email": "nithinmamanayil@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/nithin-m-a-/",
+    "specialties": [
+        "Business Intelligence",
+        "Data Analytics",
+        "Artificial Intellignece"
+    ],
+    "years_experience": 10,
+    "education": [
+        {
+            "degree": "Bachelor Of Technology",
+            "institution": "University Of Calicut",
+            "year": "2016"
+        }
+    ]
+}
