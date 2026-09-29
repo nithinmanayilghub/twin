@@ -7,6 +7,10 @@ terraform {
       version = "~> 6.0"
     }
   }
+
+  # Values are supplied via -backend-config in scripts/deploy.sh so that
+  # each environment (dev/test/prod) gets its own state file in this bucket.
+  backend "s3" {}
 }
 
 provider "aws" {
