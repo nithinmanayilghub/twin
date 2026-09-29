@@ -19,13 +19,14 @@ Set-Location (Join-Path (Split-Path $PSScriptRoot -Parent) "terraform")
 # Get AWS Account ID for backend configuration
 $awsAccountId = aws sts get-caller-identity --query Account --output text
 $awsRegion = if ($env:DEFAULT_AWS_REGION) { $env:DEFAULT_AWS_REGION } else { "us-east-1" }
+$backendRegion = if ($env:TF_STATE_REGION) { $env:TF_STATE_REGION } else { "ap-south-1" }  # region of the state bucket itself, independent of deploy region
 
 # Initialize terraform with S3 backend
 Write-Host "Initializing Terraform with S3 backend..." -ForegroundColor Yellow
 terraform init -input=false `
     -backend-config="bucket=twin-terraform-state-$awsAccountId" `
     -backend-config="key=$Environment/terraform.tfstate" `
-    -backend-config="region=$awsRegion" `
+    -backend-config="region=$backendRegion" `
     -backend-config="dynamodb_table=twin-terraform-locks" `
     -backend-config="encrypt=true"
 
